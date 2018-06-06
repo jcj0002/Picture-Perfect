@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-//connected database
+//connected db
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI); 
 
