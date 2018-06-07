@@ -5,7 +5,10 @@ const picturesSchema = new Schema({
   description: String,
   info: String,
   pictureItself: String,
-  date: Date
+  date:{
+    type: Date,
+    default: new Date()
+  }
 })
 
-module.exports = commentSchema
+module.exports = picturesSchema

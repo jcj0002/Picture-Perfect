@@ -1,5 +1,5 @@
 const Schema = require('mongoose').Schema
-// const locationSchema = require('./locationSchema')
+const locationSchema = require('./locationSchema')
 
 const userSchema = new Schema({
     firstName: {
@@ -13,6 +13,7 @@ const userSchema = new Schema({
     userName: String,
     company: String,
     profilePicture: String,
+    location: [locationSchema]
 })
 
 module.exports = userSchema
