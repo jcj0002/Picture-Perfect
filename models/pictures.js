@@ -1,7 +1,7 @@
 //requirements: require mongoose
 const mongoose = require('mongoose')
 
-//create your user schema:
+//create your picture schema:
 const picturesSchema = require('../db/schemas/picturesSchema')
 
 const pictures = mongoose.model('pictures', picturesSchema)
