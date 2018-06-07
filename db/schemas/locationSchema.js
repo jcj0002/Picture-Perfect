@@ -1,8 +1,9 @@
 const Schema = require('mongoose').Schema
-//need to embed
+const pictures = require('./picturesSchema')
 const locationSchema = new Schema({
   city: String,
   state: String,
+  pictures: [locationSchema]
 })
 
 module.exports = locationSchema

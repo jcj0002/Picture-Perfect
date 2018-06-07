@@ -1,5 +1,5 @@
 const Schema = require('mongoose').Schema
-const locationSchema = require('./locationSchema')
+// const locationSchema = require('./locationSchema')
 
 const userSchema = new Schema({
     firstName: {
