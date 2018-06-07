@@ -36,11 +36,20 @@ router.get('/:id', (req, res) => {
 
     Pictures
         .findById(req.params.id)
-        .then((homeworkAssignment) =>{
-            res.render('pictures/show', {homeworkAssignment})
+        .then((individualPicture) =>{
+            res.render('pictures/show', {individualPicture})
         })
 
 
+})
+
+//EDIT ROUTE
+router.get('/:id/edit', (req,res) =>{
+    Pictures
+        .findById(req.params.id)
+        .then((onepicture)=>{
+            res.render('pictures/edit', {indvidualPicture: onePicture})
+        })
 })
 
 module.exports = router
