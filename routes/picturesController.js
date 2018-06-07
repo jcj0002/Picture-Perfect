@@ -52,4 +52,11 @@ router.get('/:id/edit', (req,res) =>{
         })
 })
 
+//UPDATE Route
+router.put('/:id', (req,res) => {
+    Pictures.findByIdAndUpdate(req.params.id,req.body, {new:ture}).then(()=>{
+        res.redirect(`/Pictures/${req.params.id}`)
+    })
+})
+
 module.exports = router
