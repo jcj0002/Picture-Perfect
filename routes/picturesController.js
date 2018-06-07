@@ -35,7 +35,11 @@ router.post('/', (req, res) => {
 router.get('/:id', (req, res) => {
 
     Pictures
-    
+        .findById(req.params.id)
+        .then((homeworkAssignment) =>{
+            res.render('pictures/show', {homeworkAssignment})
+        })
+
 
 })
 
