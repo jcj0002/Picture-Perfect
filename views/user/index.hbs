@@ -1,7 +1,8 @@
 <h1>All Users</h1>
 
+
+{{#each groupOfUsers}}
 <ul>
-  {{#each groupOfUsers}}
   <br>
   <li>
     <a href="/user/{{_id}}">
@@ -11,22 +12,11 @@
       <p>
         <img src="{{profilePicture}}" alt="">
       </p>
-     
-      
-     
-
-
-
+      <p>{{location}}</p>
     </a>
-    
-
   </li>
-  {{/each}}
-  <br>
-  <form action="/user/new">
-   <input type="submit" value="CREATE A NEW USER"/>
-</form>
 </ul>
+{{/each}}
 
 
-
+<button href="/user/new">CREATE NEW USER</button>

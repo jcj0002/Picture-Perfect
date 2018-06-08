@@ -1,22 +1,23 @@
 <h1>show page</h1>
 <ul>
-  {{individualUser}}
+
   <br>
-  <li>
-    {{!-- <a href="/user/{{_id}}"> --}}
-      <p>name: {{firstName}} {{lastName}}</p>
-      <p>user name: {{userName}}</p>
-      <p>{{company}}</p>
+  
+    <p"/user/{{individualUser._id}}"</p>
+      <p>name: {{individualUser.firstName}} {{individualUser.lastName}}</p>
+      <p>username: {{individualUser.userName}}</p>
+      <p>{{individualUser.company}}</p>
       <p>
-        <img src="{{profilePicture}}" alt="">
+        <img src="{{individualUser.profilePicture}}" alt="">
       </p>
      
-      
-     
+    <a href="/user/{{individualUser._id}}/edit" >EDIT</a>
+  
+ 
 
 
 
-    </a>
+    {{!-- </a> --}}
     
 
-  </li>
+ 

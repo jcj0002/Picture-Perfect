@@ -30,12 +30,13 @@ router.post('/', (req, res) => {
   User
     .create(newUser)
     .then(() => {
-      res.redirect('/user')
+      res.redirect('/user/new')
      
     })
     
 })
 console.log ("create is working")
+
 //SHOW ROUTE
 router.get('/:id', (req, res) => {
 
@@ -46,15 +47,18 @@ router.get('/:id', (req, res) => {
       })
 
 })
+
 console.log ("show is working")
+
 //EDIT ROUTE
 router.get('/:id/edit', (req, res) => {
   User
       .findById(req.params.id)
-      .then((oneUser) => {
-          res.render('user/edit', { indvidualUser: oneUser })
+      .then((users) => {
+          res.render('user/edit', { indvidualUser: users })
       })
 })
+console.log ("edit is working")
 
 //UPDATE Route
 router.put('/:id', (req, res) => {
