@@ -31,10 +31,11 @@ router.post('/', (req, res) => {
     .create(newUser)
     .then(() => {
       res.redirect('/user')
+     
     })
-    console.log ("create is working")
+    
 })
-
+console.log ("create is working")
 //SHOW ROUTE
 router.get('/:id', (req, res) => {
 
@@ -45,7 +46,22 @@ router.get('/:id', (req, res) => {
       })
 
 })
+console.log ("show is working")
+//EDIT ROUTE
+router.get('/:id/edit', (req, res) => {
+  User
+      .findById(req.params.id)
+      .then((oneUser) => {
+          res.render('user/edit', { indvidualUser: oneUser })
+      })
+})
 
+//UPDATE Route
+router.put('/:id', (req, res) => {
+  User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
+      res.redirect(`/user/${req.params.id}`)
+  })
+})
 
 
 module.exports = router

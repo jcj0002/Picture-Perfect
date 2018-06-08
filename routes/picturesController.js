@@ -20,17 +20,6 @@ router.get('/', (req, res, next) => {
 
 
 
-//SHOW ROUTE
-router.get('/:id', (req, res) => {
-
-    Pictures
-        .findById(req.params.id)
-        .then((individualPicture) => {
-            res.render('pictures/show', { individualPicture })
-        })
-
-
-})
 
 //EDIT ROUTE
 router.get('/:id/edit', (req, res) => {
