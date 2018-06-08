@@ -18,19 +18,8 @@ router.get('/', (req, res, next) => {
 
 }) 
 
-//NEW Route
-router.get('/new', (req, res) => {
-    res.render('pictures/new')
-})
-//CREATE Route
-router.post('/', (req, res) => {
-    const newPicture = req.body
-    Pictures
-        .create(newPicture)
-        .then(() => {
-            res.redirect('/pictures')
-        })
-})
+
+
 //SHOW ROUTE
 router.get('/:id', (req, res) => {
 

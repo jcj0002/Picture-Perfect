@@ -2,14 +2,8 @@ const Schema = require('mongoose').Schema
 const locationSchema = require('./locationSchema')
 
 const userSchema = new Schema({
-    firstName: {
-        type: String,
-        required: true
-    },
-    lastName: {
-        type: String,
-        required: true
-    },
+    firstName: String,
+    lastName: String,
     userName: String,
     company: String,
     profilePicture: String,

@@ -2,19 +2,31 @@
 
 <ul>
   {{#each groupOfUsers}}
+  <br>
   <li>
     <a href="/users/{{_id}}">
-      <p>{{firstName}}</p> 
-      <p>{{lastName}}</p>
-      <p>{{userName}}</p>
+      <p>name: {{firstName}} {{lastName}}</p>
+      <p>user name: {{userName}}</p>
       <p>{{company}}</p>
-      <p>{{profilePicture}}</p>
-      <p>{{location}}</p>
+      <p>
+        <img src="{{profilePicture}}" alt="">
+      </p>
+     
       
+     
 
 
 
     </a>
+    
+
   </li>
   {{/each}}
+  <br>
+  <form action="/user/new">
+   <input type="submit" value="CREATE A NEW USER"/>
+</form>
 </ul>
+
+
+
