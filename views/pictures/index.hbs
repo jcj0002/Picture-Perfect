@@ -1,0 +1,16 @@
+<h1>All Pictures</h1>
+
+<ul>
+  {{#each groupOfPictures}}
+  <li>
+    <a href="/pictures/{{_id}}">
+      <p>{{userName}}</p> 
+      <p>{{description}}</p>
+      <p>{{information}}</p>
+      <p>{{pictureItself}}</p>
+      <p>{{date}}</p>
+      
+      </a>
+  </li>
+  {{/each}}
+</ul>

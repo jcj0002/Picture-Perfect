@@ -1,0 +1,20 @@
+<h1>All Users</h1>
+
+<ul>
+  {{#each groupOfUsers}}
+  <li>
+    <a href="/users/{{_id}}">
+      <p>{{firstName}}</p> 
+      <p>{{lastName}}</p>
+      <p>{{userName}}</p>
+      <p>{{company}}</p>
+      <p>{{profilePicture}}</p>
+      <p>{{location}}</p>
+      
+
+
+
+    </a>
+  </li>
+  {{/each}}
+</ul>

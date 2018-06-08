@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
         })
         .catch((err) => res.send(err))
 
-})
+}) 
 
 //NEW Route
 router.get('/new', (req, res) => {
