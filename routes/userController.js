@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
   User
     .create(newUser)
     .then(() => {
-      res.redirect('/user/new')
+      res.redirect('/user')
      
     })
     

@@ -1,33 +1,31 @@
+<h1>
+    Edit {{individualUser.id}}</h1>
 
-<h1>Create New User</h1>
-
-<form action="/user" method="POST">
+<form action="/user/{{individualUser._id}}?_method=PUT" method="POST">
     <div>
         <label for="firstName">First Name:</label>
-        <input type="text" name="lastName" placeholder="First Name" />
+        <input type="text" name="firstName" value={{individualUser.firstName}}/>
     </div>
     <br>
     <div>
         <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName" placeholder="Last Name" />
+        <input type="text" name="lastName">{{individualUser.lastName}}</input>
     </div>
     <br>
     <div>
         <label for="username">Username:</label>
-        <input type="text" name="username" placeholder="Username" />
+        <input type="text" name="username" value={{individualUser.username}} />
     </div>
     <br>
     <div>
-        <label for="companyname">Company Name:</label>
-        <input type="text" name="companyName" placeholder="Company Name" />
+        <label for="companyName">Company Name:</label>
+        <input type="text" name="companyName" value={{individualUser.companyName}} />
     </div>
     <br>
     <div>
-        <label for="profilepicture">Profile Image:</label>
-        <input type="text" name="profileImage" placeholder="Profile URL" />
+        <label for="profilePicture">Profile Image:</label>
+        <input type="text" name="profileImage" value={{individualUser.profilePicture}} />
     </div>
     <br>
-
-     <button type="submit">SAVE</button>
+    <button type="submit">Update</button>
 </form>
-</ul>
