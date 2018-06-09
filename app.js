@@ -5,6 +5,9 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const mongoose = require('mongoose')
+const methodOverride = require('method-override')
+
 
 const indexRouter = require('./routes/index');
 const userController = require('./routes/userController');
@@ -12,14 +15,19 @@ const picturesController = require('./routes/picturesController');
 const app = express();
 
 //connected db
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI); 
-
+mongoose.connect('mongodb://localhost/Picture-Perfect')
+  .then(() => {
+    console.log('connected to mongoDB')
+  })
+  .catch((err) => {
+    console.log('ERROR', err)
+  })
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(methodOverride('_method'))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

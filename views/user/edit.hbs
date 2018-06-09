@@ -1,15 +1,15 @@
 <h1>
-    Edit {{individualUser.id}}</h1>
+    Edit {{individualUser.firstName}}</h1>
 
 <form action="/user/{{individualUser._id}}?_method=PUT" method="POST">
     <div>
         <label for="firstName">First Name:</label>
-        <input type="text" name="firstName" value={{individualUser.firstName}}/>
+        <input type="text" name="firstName" value={{individualUser.firstName}} />
     </div>
     <br>
     <div>
         <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName">{{individualUser.lastName}}</input>
+        <input type="text" name="lastName" {{individualUser.lastName}}</input>
     </div>
     <br>
     <div>
@@ -26,6 +26,5 @@
         <label for="profilePicture">Profile Image:</label>
         <input type="text" name="profileImage" value={{individualUser.profilePicture}} />
     </div>
-    <br>
     <button type="submit">Update</button>
 </form>

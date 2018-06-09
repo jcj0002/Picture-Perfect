@@ -44,7 +44,8 @@ router.get('/:id', (req, res) => {
       .findById(req.params.id)
       .then((individualUser) => {
           res.render('user/show', { individualUser })
-      })
+     
+        })
 
 })
 
@@ -55,15 +56,18 @@ router.get('/:id/edit', (req, res) => {
   User
       .findById(req.params.id)
       .then((users) => {
-          res.render('user/edit', { indvidualUser: users })
-      })
+          res.render('user/edit', { individualUser: users })
+          
+        })
+      
 })
 console.log ("edit is working")
 
-//UPDATE Route
+// UPDATE Route
 router.put('/:id', (req, res) => {
-  User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-      res.redirect(`/user/${req.params.id}`)
+ User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
+    res.redirect(`/user/${req.params.id}`)
+
   })
 })
 
