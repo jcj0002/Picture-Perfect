@@ -13,7 +13,9 @@
      
     <button><a href="/user/{{individualUser._id}}/edit" >EDIT</a></button>
   <button><a href="/user">SAVE</a></button>
- 
+  <form action="/user/{{individualUser._id}}?_method=DELETE" method="POST">
+  <button type="submit">DELETE USER</button>
+</form>
 
 
 
