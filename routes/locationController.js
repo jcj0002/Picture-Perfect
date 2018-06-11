@@ -1,36 +1,24 @@
 const express = require('express')
-const router = express.Router()
-// const User = require('../models/user')
+const router = express.Router({ mergeParams: true })
+const User = require('../models/user')
 const Location = require('../models/location')
 
 // Get Listing
 router.get('/', (req, res, next) => {
 
-  Location
+  // Find user by userId
+  User.findById(req.params.userId)
+    .then((user) => {
+      const listOfLocations = user.location
+      console.log(listOfLocations)
+      // once you have user, do the same render
+      // listOfLocations will be equal to user.locations
+      res.render('location/index', {
+        listOfLocations
 
-    .find()
-    .then((listOfLocations) => {
-
-      
-      res.render('location/index', { listOfLocations: listOfLocations })
+      })
     })
-    .catch((err) => res.send(err))
-
 })
 
 
-
-
-// router.get('/', (req, res, next) => {
-
-    
-//     User.findById(req.params.userId)
-//       .then((user) => {
-//         const location = user.locations
-//         res.render('user/index', {
-//           user
-//         })
-//       })
-
-//   })
-module.exports= router;
+module.exports = router

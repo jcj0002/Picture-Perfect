@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/user', userController);
-app.use('/location', locationController);
+app.use('/user/:userId/location', locationController);
 app.use('/pictures', picturesController);
 
 
