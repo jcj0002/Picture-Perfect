@@ -11,7 +11,9 @@ const methodOverride = require('method-override')
 
 const indexRouter = require('./routes/index');
 const userController = require('./routes/userController');
+const locationController = require('./routes/locationController');
 const picturesController = require('./routes/picturesController');
+
 const app = express();
 
 //connected db
@@ -36,7 +38,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/user', userController);
+app.use('/location', locationController);
 app.use('/pictures', picturesController);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

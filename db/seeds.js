@@ -54,10 +54,27 @@ mongoose.connect('mongodb://localhost/Picture-Perfect')
     profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
     location: [location1]
  })
+ const user4 = new User({
+  firstName: 'Sally',
+  lastName: 'Appleseed',
+  userName: 'tapple',
+  company: 'Jane Appleseed Photos',
+  profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
+  location: [location1]
+})
+const user5 = new User({
+  firstName: 'Julie',
+  lastName: 'Appleseed',
+  userName: 'happle',
+  company: 'Jane Appleseed Photos',
+  profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
+  location: [location1]
+})
     
     
     
-    const users = [user1, user2, user3]
+    const users = [user1, user2, user3, user4, user5 ]
+    const locations = [location1]
 
     // save test data
      return User.insertMany(users)

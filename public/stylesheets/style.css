@@ -1,8 +1,33 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgb(225, 168, 177);
 }
 
 a {
   color: #00B7FF;
+}
+
+.nav-bar {
+ margin-left: auto;
+}
+
+.table{
+  margin-top: 5%;
+  margin-left: 7%;
+  position: relative;
+}
+
+.container{
+  background-color:  rgb(225, 168, 177, 0.5) ;
+  margin-top: -40%;
+  margin-left:60%;
+  color:white;
+  border: solid gray 5px;
+  position: absolute;
+  width: 350px;
+  height: 550px;
+}
+#greeting{
+  font-size: 30px;
 }
