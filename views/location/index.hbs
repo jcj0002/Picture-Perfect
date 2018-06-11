@@ -1,26 +1,16 @@
 <h1>All Locations</h1>
 <ul>
- {{#each listOfLocations}}
-  
+{{#each groupOfLocations}}
+
+  <br>
   <li>
     <a href="/location/{{_id}}">
-      <p>state:{{state}} </p>
+      <p> {{state}}</p>
+      
+        <img src="{{pictures}}" alt="">
+      </p>
     </a>
   </li>
   
- 
-{{/each}}
-<li>
-  <a href="">Alabama</a>
-</li>
-<br>
-<li>
-  <a href="">Georgia</a>
-</li>
-<br>
-<li>
-  <a href="">Florida</a>
-</li>
-
-
+  {{/each}}
 </ul>

@@ -13,6 +13,7 @@ const indexRouter = require('./routes/index');
 const userController = require('./routes/userController');
 const locationController = require('./routes/locationController');
 const picturesController = require('./routes/picturesController');
+const allLocationsController = require('./routes/allLocationsController');
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.use('/', indexRouter);
 app.use('/user', userController);
 app.use('/user/:userId/location', locationController);
 app.use('/pictures', picturesController);
+app.use('/location', allLocationsController);
 
 
 // catch 404 and forward to error handler
