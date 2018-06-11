@@ -18,7 +18,7 @@ const allLocationsController = require('./routes/allLocationsController');
 const app = express();
 
 //connected db
-mongoose.connect('mongodb://localhost/Picture-Perfect')
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('connected to mongoDB')
   })

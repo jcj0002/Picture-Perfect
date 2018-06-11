@@ -1,2 +1,5 @@
-<h1>Locations</h1>
-<h3>Pictures: {{individualLocations.pictureItself}}</h3>
+{{individualLocations}}
+<h1>{{individualLocations.state}}</h1>
+{{#each individualLocations.pictures}}
+    <img src="{{pictureItself}}" alt="{{userName}}"> 
+{{/each}}
