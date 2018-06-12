@@ -31,3 +31,42 @@ a {
 #greeting{
   font-size: 30px;
 }
+
+.images{
+ width: 500px;
+ height: 500px; 
+}
+.photodiv{
+  border: solid 4px wheat;
+  display: flex;
+  flex-wrap: wrap
+}
+.happyphotos{
+
+  width: 50%;
+  height: 50%;
+  justify-content: flex-start;
+  border: solid white;
+
+}
+
+#happyphoto1{
+  height: 478px;
+  
+}
+
+#happyphoto2{
+  height:466px;
+}
+
+#happyphoto3{
+  height:468px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000 ;
+
+}

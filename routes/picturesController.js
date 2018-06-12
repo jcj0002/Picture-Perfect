@@ -20,30 +20,4 @@ router.get('/', (req, res, next) => {
 
 
 
-//EDIT ROUTE
-router.get('/:id/edit', (req, res) => {
-    Pictures
-        .findById(req.params.id)
-        .then((onepicture) => {
-            res.render('pictures/edit', { indvidualPicture: onePicture })
-        })
-})
-
-//UPDATE Route
-router.put('/:id', (req, res) => {
-    Pictures.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-        res.redirect(`/Pictures/${req.params.id}`)
-    })
-})
-
-//DELETE Route
-router.delete('/:id', (req, res) => {
-    Pictures.findByIdAndRemove(req.params.id)
-        .then(() => {
-            console.log('Successfully Delete')
-            res.redirect('/pictures')
-
-        })
-})
-
 module.exports = router
