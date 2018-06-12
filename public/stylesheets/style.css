@@ -90,10 +90,10 @@ h1 {
 
 .userinfo{
   font-size: 25px;
-  color: wheat;
+  color: white;
   text-shadow: #000000;
-  padding-left: 80px;
-  /* margin-left: 35%; */
+  padding-left: 10px;
+ 
   
    
 
@@ -115,6 +115,19 @@ h1 {
   font-size:25px;
   border: solid wheat;
   
+}
+.usercontainerindex{
+  background: rgb(255,228,225);
+  width: 500px;
+  color: white;
+  text-shadow: #000000;
+  font-weight: bold;
+  padding: 20px;
+  font-size:25px;
+  border: solid wheat;
+  margin-bottom: 30px;
+  margin-left:70px;
+
 }
 
 .button{

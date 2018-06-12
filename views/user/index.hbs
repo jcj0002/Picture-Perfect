@@ -6,7 +6,7 @@
 <div class="fixed-top">
 
   <nav class="navbar navbar-light" style="background-color: coral;">
-    <!-- Navbar content -->
+
   </nav>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
@@ -34,24 +34,25 @@
     </div>
   </nav>
   <nav class="navbar navbar-light" style="background-color: coral;">
-    <!-- Navbar content -->
+
   </nav>
 </div>
 
 {{#each groupOfUsers}}
 <ul>
   <br>
-<div class="usercontainer">
-  <a href="/user/{{_id}}">
-    <p>
-      <img class="profilepics" src="{{profilePicture}}" alt="">
-    </p>
-    <p class="userinfo">NAME: {{firstName}} {{lastName}}</p>
-    <p class="userinfo">USERNAME: {{userName}}</p>
-    <p class="userinfo">COMPANY: {{company}}</p>
-
-  </a>
-</div>
+  <div class="usercontainer">
+    <a href="/user/{{_id}}">
+      <p>
+        <img class="profilepics" src="{{profilePicture}}" alt="">
+      </p>
+      <div class="usercontainerindex">
+        <p class="userinfo">NAME: {{firstName}} {{lastName}}</p>
+        <p class="userinfo">USERNAME: {{userName}}</p>
+        <p class="userinfo">COMPANY: {{company}}</p>
+      </div>
+    </a>
+  </div>
 </ul>
 {{/each}}
 
