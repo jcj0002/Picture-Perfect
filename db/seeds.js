@@ -87,11 +87,11 @@ const user1 = new User({
   lastName: 'Appleseed',
   userName: 'japple',
   company: 'Jane Appleseed Photos',
-  profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
+  profilePicture: 'https://images.unsplash.com/photo-1486400350519-097ccf6a6e4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=32fa3849097946ae95191a5851c37531&auto=format&fit=crop&w=2700&q=80',
   location: [location1]
 })
 const user2 = new User({
-  firstName: 'Billy',
+  firstName: 'Stacy',
   lastName: 'Appleseed',
   userName: 'rapple',
   company: 'Jane Appleseed Photos',
@@ -99,11 +99,11 @@ const user2 = new User({
   location: [location2]
 })
 const user3 = new User({
-  firstName: 'Dave',
+  firstName: 'Darla',
   lastName: 'Appleseed',
   userName: 'snapple',
   company: 'Jane Appleseed Photos',
-  profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
+  profilePicture: 'https://images.unsplash.com/photo-1524236812453-5eb42a151ec3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b69272d170aa08466312173b2dfaed87&auto=format&fit=crop&w=800&q=60',
   location: [location3]
 })
 const user4 = new User({
@@ -111,7 +111,7 @@ const user4 = new User({
   lastName: 'Appleseed',
   userName: 'tapple',
   company: 'Jane Appleseed Photos',
-  profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
+  profilePicture: 'https://images.unsplash.com/photo-1508002366005-75a695ee2d17?ixlib=rb-0.3.5&s=10ebce87aad624c755de3eef5074a11f&auto=format&fit=crop&w=800&q=60',
   location: [location4]
 })
 const user5 = new User({
@@ -119,7 +119,7 @@ const user5 = new User({
   lastName: 'Appleseed',
   userName: 'happle',
   company: 'Jane Appleseed Photos',
-  profilePicture: 'https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-0.3.5&s=6b8b8f1e0baa1d6660285c85155917e2&auto=format&fit=crop&w=581&q=80',
+  profilePicture: 'https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07922ede6fd858c73b30fe38b8a34f7c&auto=format&fit=crop&w=800&q=60',
   location: [location5]
 })
 
