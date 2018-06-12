@@ -11,4 +11,15 @@
 ### Node and Bootstrap are  technologies used for this project. W3 schools was referenced for this project. I used Unsplash https://unsplash.com/ for images.
 
 * https://getbootstrap.com/
+* Nodemon
+* Express
+* Mongo
+* HandleBars
+* Mongoose
+
+##WIREFRAMES
+[Imgur](https://i.imgur.com/JCfU3lH.jpg?1)
+
+##DATA MODELS
+[Imgur](https://i.imgur.com/Fp6hcHk.png)
 
