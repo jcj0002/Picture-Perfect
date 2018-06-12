@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
       .findById(req.params.id)
       .then((individualUser) => {
         console.log ("show is working")
-        res.render('user/show', { individualUser, state: individualUser.location[0].state  })
+        res.render('user/show', { individualUser : individualUser  })
      
         })
 

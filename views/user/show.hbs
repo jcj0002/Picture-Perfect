@@ -1,26 +1,69 @@
-<h1>show page</h1>
-<ul>
+<br>
+<br>
+<br>
+<h1>{{individualUser.firstName}} {{individualUser.lastName}}</h1>
+<br>
+<br>
 
-  <br>
-  
-    {{!-- <p"/user/{{individualUser._id}}"</p> --}}
-      <p>name: {{individualUser.firstName}} {{individualUser.lastName}}</p>
-      <p>username: {{individualUser.userName}}</p>
-      <p>{{individualUser.company}}</p>
-      <p>state: {{state}}</p>
+<body>
+  <div class="fixed-top">
+
+    <nav class="navbar navbar-light" style="background-color: coral;">
+      <!-- Navbar content -->
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">PICTURE PERFECT</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://localhost:3000/user">PHOTOGRAPHERS
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/location">LOCATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/pictures">PHOTOS</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+
+        </form>
+      </div>
+    </nav>
+    <nav class="navbar navbar-light" style="background-color: coral;">
+      <!-- Navbar content -->
+    </nav>
+    <br>
+
+  </div>
+  <div class="usercontainer">
+    <ul>
+      <br>
       <p>
-        <img src="{{individualUser.profilePicture}}" alt="">
+        <img class="indprofilepics" src="{{individualUser.profilePicture}}" alt="">
       </p>
-     
-    <button><a href="/user/{{individualUser._id}}/edit" >EDIT</a></button>
-  <button><a href="/user">SAVE</a></button>
-  <form action="/user/{{individualUser._id}}?_method=DELETE" method="POST">
-  <button type="submit">DELETE USER</button>
-</form>
+      <div class="personalcontainer" <p>NAME: {{individualUser.firstName}} {{individualUser.lastName}}</p>
+        <p>USERNAME: {{individualUser.userName}}</p>
+        <p class="company">{{individualUser.company}}</p>
+      </div>
 
 
-
-
-    
-
- 
+      <button class="personalbutton">
+        <a href="/user/{{individualUser._id}}/edit">EDIT</a>
+      </button >
+   
+      <button class="personalbutton">
+        <a href="/user">SAVE</a>
+      </button>
+  
+      <form action="/user/{{individualUser._id}}?_method=DELETE" method="POST">
+        <button class="personalbutton" type="submit">DELETE USER</button>
+      </form>
+  </div>
+</body>
