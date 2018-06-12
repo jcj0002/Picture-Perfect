@@ -17,9 +17,9 @@
 * HandleBars
 * Mongoose
 
-##WIREFRAMES
-[Imgur](https://i.imgur.com/JCfU3lH.jpg?1)
+## WIREFRAMES
+![alt text](https://i.imgur.com/JCfU3lH.jpg?1)
 
 ##DATA MODELS
-[Imgur](https://i.imgur.com/Fp6hcHk.png)
+![alt text](https://i.imgur.com/Fp6hcHk.png)
 
