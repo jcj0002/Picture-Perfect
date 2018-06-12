@@ -1,16 +1,61 @@
+<br>
+<br>
+<br>
+<br>
 <h1>All Locations</h1>
-<ul>
-{{#each groupOfLocations}}
+<br>
+<br>
 
-  <br>
-  <li>
-    <a href="/location/{{_id}}">
-      <p> {{state}}</p>
-      
+<body>
+  <div class="usercontainer" id="locationcontainer">
+  <ul>
+    {{#each groupOfLocations}}
+
+    <br>
+    <li>
+      <a href="/location/{{_id}}">
+        <p> {{state}}</p>
+
         <img src="{{pictures}}" alt="">
-      </p>
-    </a>
-  </li>
-  
-  {{/each}}
-</ul>
+        </p>
+      </a>
+    </li>
+
+    {{/each}}
+  </ul>
+  </div>
+  <div class="fixed-top">
+
+    <nav class="navbar navbar-light" style="background-color: coral;">
+      <!-- Navbar content -->
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="http://localhost:3000">PICTURE PERFECT</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://localhost:3000/user">PHOTOGRAPHERS
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/location">LOCATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/pictures">PHOTOS</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+
+        </form>
+      </div>
+    </nav>
+    <nav class="navbar navbar-light" style="background-color: coral;">
+
+    </nav>
+
+</body>

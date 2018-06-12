@@ -39,9 +39,13 @@ a {
 }
 
 .images{
- width: 500px;
- height: 500px; 
-}
+  width: 65%;
+  height: 65%;
+  justify-content: flex-start;
+  border: solid wheat;
+  margin-left: 270px;
+
+ }
 .photodiv{
   border: solid 4px wheat;
   display: flex;
@@ -57,16 +61,16 @@ a {
 }
 
 #happyphoto1{
-  height: 478px;
+  height: 513px;
   
 }
 
 #happyphoto2{
-  height:466px;
+  height:499px;
 }
 
 #happyphoto3{
-  height:468px;
+  height:500px;
 }
 
 h1 {
@@ -120,8 +124,10 @@ h1 {
   margin-left:10px;
 }
 .personalbutton{
-padding-bottom:20px;
+padding-bottom:15px;
 margin-top: 10px;
+text-align: center;
+
 
 
 }
@@ -139,4 +145,27 @@ margin-top: 10px;
 .update{
   background:green;
   margin-bottom: 10px;
+}
+
+#locationcontainer{
+  font-size: 30px;
+  text-transform: uppercase;
+  color:wheat;
+  text-shadow: black;
+}
+.locationpicture{
+  width: 75%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  border: solid white;
+}
+
+.statebutton{
+  margin: 30px 50px 75px 580px;
+  font-size:35px;
+  text-transform: uppercase;
+  background: white;
+  color:wheat;
+  border:solid wheat 2px;
 }
