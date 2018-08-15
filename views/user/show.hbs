@@ -56,12 +56,12 @@
 
       <button class="personalbutton">
         <a href="/user/{{individualUser._id}}/edit">EDIT</a>
-      </button >
-   
-      <button class="personalbutton" id = "savebutton">
+      </button>
+
+      <button class="personalbutton" id="savebutton">
         <a href="/user">SAVE</a>
       </button>
-  
+
       <form action="/user/{{individualUser._id}}?_method=DELETE" method="POST">
         <button class="personalbutton" type="submit">DELETE USER</button>
       </form>

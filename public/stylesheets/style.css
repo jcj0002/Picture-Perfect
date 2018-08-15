@@ -2,6 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: rgb(225, 168, 177);
+  
 }
 
 a {
@@ -15,27 +16,51 @@ a {
 .table{
   margin-top: 5%;
   margin-left: 7%;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
   
 }
+
 .imageborder{
   border: solid wheat 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width:80vw;
+  height:65vh;
+  margin-right: 7%;
  
  
 }
 
+
 .container{
   background-color:  rgb(225, 168, 177, 1) ;
-  margin-top: -34%;
-  margin-left:35%;
+  margin-bottom: 50%;
+  /* margin-left:35%; */
   color:white;
   border: solid gray 5px;
-  position: absolute;
-  width: 650px;
-  height: 279px;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-23%, -85%);
+  /* width: 750px; */
+  width: 45vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-grow: inherit;
 }
+
+
 #greeting{
   font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .images{
@@ -182,3 +207,4 @@ text-align: center;
   color:wheat;
   border:solid wheat 2px;
 }
+
